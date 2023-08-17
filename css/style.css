@@ -587,6 +587,26 @@ a {
   transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
+.previewbtn {
+  margin-right: 20px;
+  height: 50px;
+  line-height: 50px;
+  width: 200px;
+  text-align: center;
+  color: #333;
+  font-size: 22px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  background-color: #FFF;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  -ms-transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
 .downloadbtn:before {
   content: '';
   position: absolute;
