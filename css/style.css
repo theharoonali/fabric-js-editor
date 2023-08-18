@@ -161,6 +161,17 @@ body {
   margin: 9px;
 }
 
+#icons-panel .button {
+  cursor: pointer;
+  line-height: 0;
+  overflow: hidden;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  margin: 9px;
+}
+
 #background-panel .canvas-size-setting input {
   width: 60px;
   background-color: #FFF;
