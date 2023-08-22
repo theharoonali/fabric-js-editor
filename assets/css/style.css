@@ -214,6 +214,7 @@ body {
 }
 
 .toolpanel#select-panel .text-section,
+.toolpanel#select-panel .text-background-section,
 .toolpanel#select-panel .effect-section {
   display: none;
 }
@@ -224,6 +225,10 @@ body {
 
 .toolpanel#select-panel.type-group .fill-section {
   display: none;
+}
+
+.toolpanel#select-panel.type-textbox .text-background-section {
+  display: block;
 }
 
 .toolpanel#select-panel.type-textbox .text-section {
