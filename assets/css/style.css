@@ -471,6 +471,14 @@ input[type="text"][required] {
   background-repeat: no-repeat;
 }
 
+input[type="checkbox"] {
+  width: 36px !important;
+  height: 30px !important;
+  cursor: pointer;
+  outline: none;
+  margin-left: auto;
+}
+
 /*------ INFO  VIDEO*/
 .infohelpvideo {
   margin-right: 10px;
