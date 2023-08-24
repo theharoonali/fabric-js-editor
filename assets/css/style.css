@@ -223,10 +223,6 @@ body {
   display: none;
 }
 
-.toolpanel#select-panel.type-group .fill-section {
-  display: none;
-}
-
 .toolpanel#select-panel.type-textbox .text-background-section {
   display: block;
 }
