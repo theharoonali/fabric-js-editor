@@ -214,6 +214,7 @@ body {
 }
 
 .toolpanel#select-panel .text-section,
+.toolpanel#select-panel .text-background-section,
 .toolpanel#select-panel .effect-section {
   display: none;
 }
@@ -222,8 +223,8 @@ body {
   display: none;
 }
 
-.toolpanel#select-panel.type-group .fill-section {
-  display: none;
+.toolpanel#select-panel.type-textbox .text-background-section {
+  display: block;
 }
 
 .toolpanel#select-panel.type-textbox .text-section {
@@ -426,6 +427,15 @@ body {
   right: 620px;
 }
 
+.anim-container {
+  display: flex;
+  align-items: center;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
 #topbar button.pngDownload {
   padding: 10px 20px;
   background-color: #FFFFFF;
@@ -469,6 +479,14 @@ input[type="text"][required] {
   background-position: top right;
   background-size: 0.5em 0.5em;
   background-repeat: no-repeat;
+}
+
+input[type="checkbox"] {
+  width: 36px !important;
+  height: 30px !important;
+  cursor: pointer;
+  outline: none;
+  margin-left: auto;
 }
 
 /*------ INFO  VIDEO*/
@@ -596,6 +614,7 @@ a {
   -ms-transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
   -o-transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
   transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  --loader-width: 0%;
 }
 
 .previewbtn {
@@ -636,12 +655,44 @@ a {
 }
 
 .downloadbtn.loading:before {
-  animation: loading 3s forwards;
-  -webkit-animation: loading 3s forwards;
+  width: var(--loader-width);
+  /*animation: loading 3s forwards;*/
+  /*-webkit-animation: loading 3s forwards;*/
 }
 
-.downloadbtn.loading.animationResume:before {
-  animation: loading2 1s forwards;
+@-webkit-keyframes loading {
+  0% {
+    width: 0%;
+  }
+  30% {
+    width: 30%;
+  }
+  50% {
+    width: 50%;
+  }
+  80% {
+    width: 80%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes loading {
+  0% {
+    width: 0%;
+  }
+  30% {
+    width: 30%;
+  }
+  50% {
+    width: 50%;
+  }
+  80% {
+    width: 80%;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 .downloadbtn.finished {
@@ -657,4 +708,5 @@ a {
 .tgaDownload.disabled {
   opacity: 0.7;
   cursor: not-allowed;
+  pointer-events: none;
 }
