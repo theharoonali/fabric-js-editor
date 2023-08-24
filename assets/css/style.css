@@ -427,6 +427,15 @@ body {
   right: 620px;
 }
 
+.anim-container {
+  display: flex;
+  align-items: center;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
 #topbar button.pngDownload {
   padding: 10px 20px;
   background-color: #FFFFFF;
